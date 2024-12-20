@@ -1,7 +1,7 @@
 const express = require("express");
 const joi = require("joi");
 const model = require("../schema/model");
-const bcrypt = require("bcrypt")
+const bcrypt = require("bcryptjs")
 const signup = express.Router();
 
 signup.post("/", async (req, res) => {
